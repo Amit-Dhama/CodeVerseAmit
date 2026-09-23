@@ -36,6 +36,8 @@ class Example{
     bobj = new SBI(); // upcasting, run time
     bobj = new ICICI(); // upcasting, run time
     bobj = new HDFC(); //upcasting, run time
+
+    // understanding downcasting is an homework:
     System.out.println(bobj.rateOfInterest()); // expect -> 7 but give 8 (Check first take result or other object is found and previous discartd and last object answer is prefer as a result)
     // System.out.println(bobj.rateOfInterest()); // 9
     // System.out.println(bobj.rateOfInterest()); // 8
