@@ -13,12 +13,12 @@ class Mahindra implements Vehicle,Car{
 
   public void honk(){
     System.out.println("Mahindra honksssss! "); // multiple inheritance work here (because in class contains a definition) but in (inheritance more than a class contains definitin with a same function)
-    
+
     // this.a++; error: reference to a is ambiguous
   }
 
   public void changeA(int newNumber){
-    this.a = a;
+    //this.a = a;
   }
 
 // it will not work and give as error like:
