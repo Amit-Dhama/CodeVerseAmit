@@ -47,3 +47,5 @@ node_modules/
 # Operating System junk files
 .DS_Store
 Thumbs.db
+
+*.class
