@@ -68,7 +68,7 @@ class Main {
     int n = arr.length;
 
     int[] ngr = new int[n];
-
+ 
     Stack<Integer> st = new Stack<>(); // its better to store indices, we are storing elements for simplicity though
 
     for (int i = n - 1; i >= 0; i--) {
@@ -125,7 +125,7 @@ class Main {
  
  
 
-
+// next question
 
 
 
