@@ -72,7 +72,22 @@ public class Main{
 
   }
 
+  // Find x raised to Power Y:
+  public static int xRaisedY1(int x, int y){
 
+    // base condition:
+    if (y==0){
+      return 1;
+    }
+
+    // smaller ans:
+    int smallerAns = xRaisedY1(x,y-1);
+
+    // full ans:
+    int ans = x*smallerAns;
+
+    return ans;
+  }
 
 
 
@@ -86,10 +101,11 @@ public class Main{
     // printDecreIncre(3);
     // int result1 = fact(5);
     // int result2 = xRaisedY(2,5);
-
+    int result3 = xRaisedY1(2,4);
 
 
     // System.out.println(result1);
     // System.out.println(result2);
+    System.out.println(result3);
   }
 }
