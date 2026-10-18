@@ -89,23 +89,67 @@ public class Main{
     return ans;
   }
 
+  // Print Zig-Zag:
+  // without written statement:
+
+  public static void printZigZag(int num){
+
+    // *** base condition ***:
+    if(num==0){
+      return;
+    }
+
+    System.out.print(num);
+    printZigZag(num-1);
+    System.out.print(num);
+    printZigZag(num-1);
+    System.out.print(num);
+
+  }
+
+    // Print Zig-Zag:
+    // without written statement:
+  // public static int printZigZagReturn(int num){
 
 
+  //   // base Condition:
+  //   if(num == 0){
+  //     return 0;
+  //   }
+    
+  //   int smallerAns1 = num-1;
+  //   int smallerAns2 = smallerAns1*(num-1);
+  //   int ans = num*smallerAns2;
 
+  //   return ans;
+  // }
 
+  public static void TOH(int n, int A, int B, int C){
 
+    // *** base condition ***
+    if(n == 0){
+      return;
+    }
+    TOH(n-1,A,C,B);
+    System.out.println("The" +n + " disc move from " +A + " -> " +C);
+    TOH(n-1,C,B,A);
+
+  }
 
   public static void main(String[] args){
     // printDecreasing(5);
     // printIncreasing(5);
     // printDecreIncre(3);
+    // printZigZag(3);
     // int result1 = fact(5);
     // int result2 = xRaisedY(2,5);
-    int result3 = xRaisedY1(2,4);
-
+    // int result3 = xRaisedY1(2,4);
+    // int result4 = printZigZagReturn(3);
+    TOH(3,10,20,30);
 
     // System.out.println(result1);
     // System.out.println(result2);
-    System.out.println(result3);
+    // System.out.println(result3);
+    // System.out.println(result4);
   }
 }
